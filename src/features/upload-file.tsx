@@ -46,16 +46,7 @@ export function FileHandler() {
     </form>
   )
 }
-type Data = { type: string; data: Blob }
-
-function sendFile(data: Data) {
-  // const type = data.type
-  axios.post(`url`, data, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  })
-}
+// type Data = { type: string; data: Blob }
 
 async function sendFiles(data: File) {
   // const type = data.type
